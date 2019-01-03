@@ -24,13 +24,27 @@ final class Rest {
                           encoding: JSONEncoding.default,
                           headers: nil).responseJSON { response in
              let decoder = JSONDecoder()
-                            
-                            print(response, "Any luck???")
-//                            do {
-//                                let parsedResults: [DataModel] = [try! decoder.decode(DataModel.self, from: response.data!)]
-//                            print("Delete me", parsedResults.count)
-//                            completionHandler(parsedResults)
-//                            }
+                            print("any result? :", response)
+            do {
+                
+                guard response.result.isSuccess else {
+                    print("parsing error: no data")
+                    completionHandler([])
+                    return
+                }
+                
+                let resultJSON = try JSONSerialization.data(withJSONObject: response.result.value,
+                                                            options: .prettyPrinted)
+                let encodedStr = String(data: resultJSON, encoding: .utf8)
+                let rawData = encodedStr?.data(using: .utf8)
+                
+                let result = try decoder.decode([DataModel].self,
+                                                              from: rawData!)
+//                print(result.count)
+
+            } catch(let error) {
+                print("d'ou!", error)
+            }
         }
     }
 }

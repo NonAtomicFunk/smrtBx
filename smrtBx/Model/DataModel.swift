@@ -9,7 +9,7 @@
 import Foundation
 
 struct DataModel: Codable {
-    let id: String
+    let id: Int
     let type: String
     let title: String
     let shortDescription: String
@@ -45,17 +45,56 @@ struct DataModel: Codable {
         try container.encode(longitude, forKey: .longitude)
     }
     
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+    
+    init(id: Int,
+        type: String,
+        title: String,
+        shortDescription: String,
+        description: String,
+        smallImage: String,
+        bigImage: String,
+        latitude: Double,
+        longitude: Double) {
         
-        self.id = try container.decode(String.self, forKey: .id)
-        self.type = try container.decode(String.self, forKey: .type)
-        self.title = try container.decode(String.self, forKey: .title)
-        self.shortDescription = try container.decode(String.self, forKey: .shortDescription)
-        self.description = try container.decode(String.self, forKey: .description)
-        self.bigImage = try container.decode(String.self, forKey: .description)
-        self.smallImage = try container.decode(String.self, forKey: .smallImage)
-        self.latitude = try container.decode(Double.self, forKey: .latitude)
-        self.longitude = try container.decode(Double.self, forKey: .longitude)
+        self.id = id
+        self.type = type
+        self.title = title
+        self.shortDescription = shortDescription
+        self.description = description
+        self.smallImage = smallImage
+        self.bigImage = bigImage
+        self.latitude = latitude
+        self.longitude = longitude
     }
+//    init(from decoder: Decoder) throws {
+    
+        
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        let container = try decoder.codingPath
+        
+        
+//        self.id = try container.decode(String.self, forKey: .id)
+//        self.type = try container.decode(String.self, forKey: .type)
+//        self.title = try container.decode(String.self, forKey: .title)
+//        self.shortDescription = try container.decode(String.self, forKey: .shortDescription)
+//        self.description = try container.decode(String.self, forKey: .description)
+//        self.bigImage = try container.decode(String.self, forKey: .description)
+//        self.smallImage = try container.decode(String.self, forKey: .smallImage)
+//        self.latitude = try container.decode(Double.self, forKey: .latitude)
+//        self.longitude = try container.decode(Double.self, forKey: .longitude)
+//    }
 }
+
+//struct DataModelList: Decodable {
+//
+//    let dmList: [DataModel]
+//
+//
+//    init(from decoder: Decoder) throws {
+//
+//        let contaiter = try decoder.codingPath
+//        self.dmList = try contaiter.
+////        let container = try decoder.container(keyedBy: CodingKeys.self)
+////        self.dmList = try container.decode([IcCellDataModel].self, forKey: .images)
+//    }
+//}

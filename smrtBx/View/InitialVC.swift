@@ -55,6 +55,8 @@ class InitialVC: UIViewController {
         self.viewModel.dataModel.asObservable()
             .bind(to: self.table.rx.items(cellIdentifier: "Cell", cellType: Cell.self)) { row, model, cell in
                 
+                cell.accessoryType = .disclosureIndicator
+                
                 cell.descrLbl.text = model.shortDescription
                 cell.titleLbl.text = model.title
                 
