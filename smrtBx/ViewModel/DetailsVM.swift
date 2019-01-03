@@ -7,7 +7,11 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 final class DetailsVM {
     
+    let bag = DisposeBag()
+    var dataModel: DataModel!
 }

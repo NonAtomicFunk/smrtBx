@@ -7,7 +7,25 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 final class InitialVM {
     
+    let bag = DisposeBag()
+    
+    let dataModel = Variable<[DataModel]>([])
+    
+    func getAll() {
+        Rest.singleTon.getAll { (array) in
+            let storableArray = array
+            self.dataModel.value = storableArray
+        }
+    }
+    
+    func goToDetils(_ modelAtIndx: Int) {
+        
+        let modelToPass = self.dataModel.value[modelAtIndx]
+        VCRouter.singletone.pushDetails(modelToPass)
+    }
 }

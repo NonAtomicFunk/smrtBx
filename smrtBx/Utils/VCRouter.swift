@@ -10,7 +10,7 @@ import UIKit
 
 final class VCRouter: NSObject {
     
-    let singletone = VCRouter()
+    static let singletone = VCRouter()
     
     var storyBoard: UIStoryboard!
     var navigationSontroller: UINavigationController!
@@ -26,8 +26,9 @@ final class VCRouter: NSObject {
         uiWindow.rootViewController = navigationSontroller
     }
     
-    func pushDetails() {
+    func pushDetails(_ model: DataModel) {
         let detailsVC = storyBoard.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
+        DetailsVM().dataModel = model
         detailsVC.viewModel = DetailsVM()
     
         self.navigationSontroller.pushViewController(detailsVC, animated: true)
