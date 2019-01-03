@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class Constants {
+    
+    let jsonUrl = "http://smartbox.software/tt/TT.json"
+}

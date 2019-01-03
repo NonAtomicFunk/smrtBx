@@ -10,6 +10,8 @@ import UIKit
 
 class DetailsVC: UIViewController {
 
+    var viewModel: DetailsVM!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
