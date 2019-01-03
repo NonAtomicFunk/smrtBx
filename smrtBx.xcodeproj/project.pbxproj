@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		BCB8F4DD21DE47A10071144E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4DC21DE47A10071144E /* AppDelegate.swift */; };
-		BCB8F4DF21DE47A10071144E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4DE21DE47A10071144E /* ViewController.swift */; };
 		BCB8F4E221DE47A10071144E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB8F4E021DE47A10071144E /* Main.storyboard */; };
 		BCB8F4E521DE47A10071144E /* smrtBx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4E321DE47A10071144E /* smrtBx.xcdatamodeld */; };
 		BCB8F4E721DE47A40071144E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB8F4E621DE47A40071144E /* Assets.xcassets */; };
 		BCB8F4EA21DE47A40071144E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB8F4E821DE47A40071144E /* LaunchScreen.storyboard */; };
+		BCB8F4F821DE492C0071144E /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4F721DE492C0071144E /* InitialVC.swift */; };
+		BCB8F4FA21DE493B0071144E /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4F921DE493B0071144E /* DetailsVC.swift */; };
+		BCB8F4FC21DE49650071144E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4FB21DE49650071144E /* Constants.swift */; };
+		BCB8F4FE21DE497A0071144E /* VCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4FD21DE497A0071144E /* VCRouter.swift */; };
+		BCB8F50121DE4A620071144E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4FF21DE4A620071144E /* Cell.swift */; };
+		BCB8F50221DE4A620071144E /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB8F50021DE4A620071144E /* Cell.xib */; };
+		BCB8F50421DE4D4C0071144E /* InitialVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F50321DE4D4C0071144E /* InitialVM.swift */; };
+		BCB8F50621DE4D7D0071144E /* DetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F50521DE4D7D0071144E /* DetailsVM.swift */; };
+		BCB8F50821DE4DAE0071144E /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F50721DE4DAE0071144E /* Rest.swift */; };
+		BCB8F50A21DE4EAB0071144E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F50921DE4EAB0071144E /* DataModel.swift */; };
+		C2D8EC88A90FAC58D59D19A2 /* Pods_smrtBx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDED6281D6C56504D967F46 /* Pods_smrtBx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DDED6281D6C56504D967F46 /* Pods_smrtBx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smrtBx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB8F4D921DE47A10071144E /* smrtBx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smrtBx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB8F4DC21DE47A10071144E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCB8F4DE21DE47A10071144E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCB8F4E121DE47A10071144E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB8F4E421DE47A10071144E /* smrtBx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smrtBx.xcdatamodel; sourceTree = "<group>"; };
 		BCB8F4E621DE47A40071144E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB8F4E921DE47A40071144E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB8F4EB21DE47A40071144E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB8F4F721DE492C0071144E /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		BCB8F4F921DE493B0071144E /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		BCB8F4FB21DE49650071144E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCB8F4FD21DE497A0071144E /* VCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRouter.swift; sourceTree = "<group>"; };
+		BCB8F4FF21DE4A620071144E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		BCB8F50021DE4A620071144E /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		BCB8F50321DE4D4C0071144E /* InitialVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVM.swift; sourceTree = "<group>"; };
+		BCB8F50521DE4D7D0071144E /* DetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVM.swift; sourceTree = "<group>"; };
+		BCB8F50721DE4DAE0071144E /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		BCB8F50921DE4EAB0071144E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DB8C71F0CF258E976B1A3094 /* Pods-smrtBx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smrtBx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6A80B2422B1ECA89268BCB /* Pods-smrtBx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smrtBx.release.xcconfig"; path = "Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D8EC88A90FAC58D59D19A2 /* Pods_smrtBx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834398750B1C7D7C4EAA52D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB8C71F0CF258E976B1A3094 /* Pods-smrtBx.debug.xcconfig */,
+				FE6A80B2422B1ECA89268BCB /* Pods-smrtBx.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC14F4E7DD5C09A02341FCDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DDED6281D6C56504D967F46 /* Pods_smrtBx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCB8F4D021DE47A10071144E = {
 			isa = PBXGroup;
 			children = (
 				BCB8F4DB21DE47A10071144E /* smrtBx */,
 				BCB8F4DA21DE47A10071144E /* Products */,
+				834398750B1C7D7C4EAA52D2 /* Pods */,
+				BC14F4E7DD5C09A02341FCDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,56 @@
 		BCB8F4DB21DE47A10071144E /* smrtBx */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8F4F621DE48B60071144E /* Utils */,
+				BCB8F4F521DE48A40071144E /* Model */,
+				BCB8F4F221DE48710071144E /* View */,
+				BCB8F4F321DE48810071144E /* ViewModel */,
 				BCB8F4DC21DE47A10071144E /* AppDelegate.swift */,
-				BCB8F4DE21DE47A10071144E /* ViewController.swift */,
-				BCB8F4E021DE47A10071144E /* Main.storyboard */,
 				BCB8F4E621DE47A40071144E /* Assets.xcassets */,
 				BCB8F4E821DE47A40071144E /* LaunchScreen.storyboard */,
 				BCB8F4EB21DE47A40071144E /* Info.plist */,
 				BCB8F4E321DE47A10071144E /* smrtBx.xcdatamodeld */,
 			);
 			path = smrtBx;
+			sourceTree = "<group>";
+		};
+		BCB8F4F221DE48710071144E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8F4E021DE47A10071144E /* Main.storyboard */,
+				BCB8F4F721DE492C0071144E /* InitialVC.swift */,
+				BCB8F4F921DE493B0071144E /* DetailsVC.swift */,
+				BCB8F4FF21DE4A620071144E /* Cell.swift */,
+				BCB8F50021DE4A620071144E /* Cell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCB8F4F321DE48810071144E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8F50321DE4D4C0071144E /* InitialVM.swift */,
+				BCB8F50521DE4D7D0071144E /* DetailsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCB8F4F521DE48A40071144E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8F50921DE4EAB0071144E /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCB8F4F621DE48B60071144E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8F4FB21DE49650071144E /* Constants.swift */,
+				BCB8F4FD21DE497A0071144E /* VCRouter.swift */,
+				BCB8F50721DE4DAE0071144E /* Rest.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB8F4EE21DE47A40071144E /* Build configuration list for PBXNativeTarget "smrtBx" */;
 			buildPhases = (
+				FA579ECBD01ACB115A3FFA37 /* [CP] Check Pods Manifest.lock */,
 				BCB8F4D521DE47A10071144E /* Sources */,
 				BCB8F4D621DE47A10071144E /* Frameworks */,
 				BCB8F4D721DE47A10071144E /* Resources */,
+				2334161A5E64193918354479 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB8F4EA21DE47A40071144E /* LaunchScreen.storyboard in Resources */,
+				BCB8F50221DE4A620071144E /* Cell.xib in Resources */,
 				BCB8F4E721DE47A40071144E /* Assets.xcassets in Resources */,
 				BCB8F4E221DE47A10071144E /* Main.storyboard in Resources */,
 			);
@@ -133,14 +219,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2334161A5E64193918354479 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA579ECBD01ACB115A3FFA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smrtBx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCB8F4D521DE47A10071144E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB8F4DF21DE47A10071144E /* ViewController.swift in Sources */,
+				BCB8F4FC21DE49650071144E /* Constants.swift in Sources */,
+				BCB8F4FE21DE497A0071144E /* VCRouter.swift in Sources */,
+				BCB8F50A21DE4EAB0071144E /* DataModel.swift in Sources */,
+				BCB8F50121DE4A620071144E /* Cell.swift in Sources */,
+				BCB8F4F821DE492C0071144E /* InitialVC.swift in Sources */,
+				BCB8F4FA21DE493B0071144E /* DetailsVC.swift in Sources */,
+				BCB8F50621DE4D7D0071144E /* DetailsVM.swift in Sources */,
 				BCB8F4DD21DE47A10071144E /* AppDelegate.swift in Sources */,
+				BCB8F50821DE4DAE0071144E /* Rest.swift in Sources */,
 				BCB8F4E521DE47A10071144E /* smrtBx.xcdatamodeld in Sources */,
+				BCB8F50421DE4D4C0071144E /* InitialVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +437,13 @@
 		};
 		BCB8F4EF21DE47A40071144E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8C71F0CF258E976B1A3094 /* Pods-smrtBx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPTEFF2RW3;
 				INFOPLIST_FILE = smrtBx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +457,13 @@
 		};
 		BCB8F4F021DE47A40071144E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6A80B2422B1ECA89268BCB /* Pods-smrtBx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPTEFF2RW3;
 				INFOPLIST_FILE = smrtBx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

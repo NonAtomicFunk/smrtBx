@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailsVC.swift
 //  smrtBx
 //
 //  Created by admin2 on 1/3/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
-
-
 }
-
