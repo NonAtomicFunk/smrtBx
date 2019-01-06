@@ -32,7 +32,8 @@ final class VCRouter: NSObject {
         let tempModel = model
         let vm = DetailsVM(tempModel)
         detailsVC.viewModel = vm
-    
+        
+        detailsVC.navigationItem.hidesBackButton = true
         self.navigationSontroller.pushViewController(detailsVC, animated: true)
     }
     

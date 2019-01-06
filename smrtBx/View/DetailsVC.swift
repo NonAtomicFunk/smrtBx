@@ -28,9 +28,15 @@ class DetailsVC: UIViewController {
     }
     
     func navSetup() {
-        let btn = UIBarButtonItem()
-        btn.image = UIImage(named: "backIcn")
-
+//        let btn = UIBarButtonItem()
+//        btn.image = UIImage(named: "backIcn")
+//        btn.tintColor = Constants().reddishOrange
+//        btn.action = #selector(self.goBack)
+//        btn.isEnabled = true
+        let btn = UIBarButtonItem(image: UIImage(named: "backIcn"),
+                                  style: .plain,
+                                  target: self,
+                                  action: #selector(self.goBack))
         btn.tintColor = Constants().reddishOrange
         
         self.navigationItem.leftBarButtonItem = btn
@@ -44,8 +50,11 @@ class DetailsVC: UIViewController {
         self.maineImg.af_setImage(withURL: url)
         
         self.titleLbl.text = self.viewModel.dataModel.title
-        self.dateLbl.text = "11.2.19" //self.viewModel.dataModel.
+        self.dateLbl.text = "11.2.19"
         self.mainDescrLbl.text = self.viewModel.dataModel.description
-        
+    }
+    
+    @objc func goBack() {
+        self.viewModel.goBack()
     }
 }
