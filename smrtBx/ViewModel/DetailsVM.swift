@@ -10,8 +10,17 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class DetailsVM {
+class DetailsVM: NSObject {
     
     let bag = DisposeBag()
     var dataModel: DataModel!
+    
+    init(_ chosenModel: DataModel) {
+        super.init()
+        self.dataModel = chosenModel
+    }
+    
+    func goBack() {
+        VCRouter.singletone.popBack()
+    }
 }

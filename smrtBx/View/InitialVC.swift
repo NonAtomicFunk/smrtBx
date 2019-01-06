@@ -50,6 +50,7 @@ class InitialVC: UIViewController {
                                   bundle: nil),
                                   forCellReuseIdentifier: "Cell")
         self.table.estimatedRowHeight = 98
+        self.navigationItem.title = "World Dev Event"
     }
     
     func bindAll() {

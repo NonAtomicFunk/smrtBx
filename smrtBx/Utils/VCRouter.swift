@@ -28,9 +28,15 @@ final class VCRouter: NSObject {
     
     func pushDetails(_ model: DataModel) {
         let detailsVC = storyBoard.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
-        DetailsVM().dataModel = model
-        detailsVC.viewModel = DetailsVM()
+        
+        let tempModel = model
+        let vm = DetailsVM(tempModel)
+        detailsVC.viewModel = vm
     
         self.navigationSontroller.pushViewController(detailsVC, animated: true)
+    }
+    
+    func popBack() {
+        self.navigationSontroller.popViewController(animated: true)
     }
 }
