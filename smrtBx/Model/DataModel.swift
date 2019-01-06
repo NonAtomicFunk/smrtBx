@@ -16,8 +16,8 @@ struct DataModel: Codable {
     let description: String
     let smallImage: String
     let bigImage: String
-    let latitude: Double
-    let longitude: Double
+    let latitude: String
+    let longitude: String
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -53,8 +53,8 @@ struct DataModel: Codable {
         description: String,
         smallImage: String,
         bigImage: String,
-        latitude: Double,
-        longitude: Double) {
+        latitude: String,
+        longitude: String) {
         
         self.id = id
         self.type = type

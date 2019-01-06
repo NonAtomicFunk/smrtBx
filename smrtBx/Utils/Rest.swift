@@ -24,11 +24,10 @@ final class Rest {
                           encoding: JSONEncoding.default,
                           headers: nil).responseJSON { response in
              let decoder = JSONDecoder()
-                            print("any result? :", response)
+
             do {
                 
                 guard response.result.isSuccess else {
-                    print("parsing error: no data")
                     completionHandler([])
                     return
                 }
@@ -38,12 +37,12 @@ final class Rest {
                 let encodedStr = String(data: resultJSON, encoding: .utf8)
                 let rawData = encodedStr?.data(using: .utf8)
                 
-                let result = try decoder.decode([DataModel].self,
+                let resultz = try decoder.decode([DataModel].self,
                                                               from: rawData!)
-//                print(result.count)
-
+                completionHandler(resultz)
+                
             } catch(let error) {
-                print("d'ou!", error)
+                print("Error in REST ", #function, error)
             }
         }
     }

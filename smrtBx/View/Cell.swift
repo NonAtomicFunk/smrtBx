@@ -16,7 +16,8 @@ class Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.frame.size.height = 375
+        self.picImage.image = UIImage(named: "defaultPic")!
+        self.picImage.frame.size.width = self.picImage.frame.height
     }
 
 //    override func setSelected(_ selected: Bool, animated: Bool) {

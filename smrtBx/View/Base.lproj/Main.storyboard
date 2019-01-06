@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-679" y="696"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="977-m7-bC5">
             <objects>
-                <viewController id="A6U-6a-XAl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsVC" id="A6U-6a-XAl" customClass="DetailsVC" customModule="smrtBx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMz-tR-Ct7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
