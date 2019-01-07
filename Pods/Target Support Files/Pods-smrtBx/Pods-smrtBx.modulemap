@@ -1,0 +1,6 @@
+framework module Pods_smrtBx {
+  umbrella header "Pods-smrtBx-umbrella.h"
+
+  export *
+  module * { export * }
+}

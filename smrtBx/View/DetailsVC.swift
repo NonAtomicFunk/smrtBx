@@ -20,6 +20,7 @@ class DetailsVC: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var mainDescrLbl: UILabel!
+    @IBOutlet weak var showOnMapBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +29,7 @@ class DetailsVC: UIViewController {
     }
     
     func navSetup() {
-//        let btn = UIBarButtonItem()
-//        btn.image = UIImage(named: "backIcn")
-//        btn.tintColor = Constants().reddishOrange
-//        btn.action = #selector(self.goBack)
-//        btn.isEnabled = true
+
         let btn = UIBarButtonItem(image: UIImage(named: "backIcn"),
                                   style: .plain,
                                   target: self,
@@ -45,16 +42,22 @@ class DetailsVC: UIViewController {
     }
     
     func uiSetup() {
-        let urlStr = self.viewModel.dataModel.bigImage ?? self.viewModel.dataModel.smallImage
+        let urlStr = self.viewModel.dataModel.bigImage// ?? self.viewModel.dataModel.smallImage
         let url = URL(string: urlStr)!
         self.maineImg.af_setImage(withURL: url)
         
         self.titleLbl.text = self.viewModel.dataModel.title
-        self.dateLbl.text = "11.2.19"
+        self.dateLbl.text = self.viewModel.dataModel.shortDescription
         self.mainDescrLbl.text = self.viewModel.dataModel.description
+        
+        self.showOnMapBtn.backgroundColor = Constants().green
     }
     
     @objc func goBack() {
         self.viewModel.goBack()
+    }
+    
+    @IBAction func showOnMapBtnTapped(_ sender: Any) {
+        
     }
 }
