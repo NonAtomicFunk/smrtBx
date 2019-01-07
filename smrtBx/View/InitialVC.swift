@@ -59,14 +59,13 @@ class InitialVC: UIViewController {
             
             switch indexChosen.element {
             case 0:
-                self!.viewModel.sortBy(.shops)
-            case 1 :
                 self!.viewModel.sortBy(.events)
-            default:
+            case 1 :
                 self!.viewModel.sortBy(.shops)
+            default:
+                self!.viewModel.sortBy(.events)
             }
         }.disposed(by: self.viewModel.bag)
-        
         
         self.viewModel.dataModel.asObservable()
             .bind(to: self.table.rx.items(cellIdentifier: "Cell", cellType: Cell.self)) { row, model, cell in

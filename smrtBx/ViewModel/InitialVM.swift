@@ -27,6 +27,7 @@ final class InitialVM {
     }
     
     func sortBy(_ typeChosen: SmrtBxTypes) {
+        
         self.dataModel.value = self.allData.value.filter({ [weak self] item -> Bool in
             return item.type == typeChosen.rawValue
         })
