@@ -127,7 +127,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="Pl8-BB-xB3"/>
                                 </constraints>
-                                <state key="normal" title="Show on Map"/>
+                                <state key="normal" title="Show on Map">
+                                    <color key="titleColor" red="0.98087352514266968" green="0.99214547872543335" blue="0.99215227365493774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="showOnMapBtnTapped:" destination="A6U-6a-XAl" eventType="touchUpInside" id="VG5-EZ-UiJ"/>
                                 </connections>
@@ -175,6 +177,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="a3p-wa-YPD" kind="relationship" relationship="rootViewController" id="06B-2A-at3"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SwS-Rh-VZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +195,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HE4-WF-br0"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3js-3T-GYC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGM-et-Dbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
