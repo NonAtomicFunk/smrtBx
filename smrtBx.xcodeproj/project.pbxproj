@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC20599221E3C09400521DD9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20599121E3C09400521DD9 /* MapVC.swift */; };
+		BC20599421E3C0FF00521DD9 /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20599321E3C0FF00521DD9 /* MapVM.swift */; };
+		BC20599621E3C63000521DD9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20599521E3C63000521DD9 /* BaseVC.swift */; };
+		BC20599821E3C66000521DD9 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20599721E3C66000521DD9 /* BaseVM.swift */; };
 		BCB8F4DD21DE47A10071144E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4DC21DE47A10071144E /* AppDelegate.swift */; };
 		BCB8F4E221DE47A10071144E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB8F4E021DE47A10071144E /* Main.storyboard */; };
 		BCB8F4E521DE47A10071144E /* smrtBx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCB8F4E321DE47A10071144E /* smrtBx.xcdatamodeld */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		5DDED6281D6C56504D967F46 /* Pods_smrtBx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smrtBx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC20599121E3C09400521DD9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		BC20599321E3C0FF00521DD9 /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
+		BC20599521E3C63000521DD9 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		BC20599721E3C66000521DD9 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		BCB8F4D921DE47A10071144E /* smrtBx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smrtBx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB8F4DC21DE47A10071144E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB8F4E121DE47A10071144E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,8 +125,10 @@
 				BCB8F4E021DE47A10071144E /* Main.storyboard */,
 				BCB8F4F721DE492C0071144E /* InitialVC.swift */,
 				BCB8F4F921DE493B0071144E /* DetailsVC.swift */,
+				BC20599121E3C09400521DD9 /* MapVC.swift */,
 				BCB8F4FF21DE4A620071144E /* Cell.swift */,
 				BCB8F50021DE4A620071144E /* Cell.xib */,
+				BC20599521E3C63000521DD9 /* BaseVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 			children = (
 				BCB8F50321DE4D4C0071144E /* InitialVM.swift */,
 				BCB8F50521DE4D7D0071144E /* DetailsVM.swift */,
+				BC20599321E3C0FF00521DD9 /* MapVM.swift */,
+				BC20599721E3C66000521DD9 /* BaseVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -162,6 +174,7 @@
 				BCB8F4D621DE47A10071144E /* Frameworks */,
 				BCB8F4D721DE47A10071144E /* Resources */,
 				2334161A5E64193918354479 /* [CP] Embed Pods Frameworks */,
+				9E4ED07711D3F9F6E1EE2351 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +267,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9E4ED07711D3F9F6E1EE2351 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smrtBx/Pods-smrtBx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA579ECBD01ACB115A3FFA37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,8 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB8F4FC21DE49650071144E /* Constants.swift in Sources */,
+				BC20599221E3C09400521DD9 /* MapVC.swift in Sources */,
 				BCB8F4FE21DE497A0071144E /* VCRouter.swift in Sources */,
 				BCB8F50A21DE4EAB0071144E /* DataModel.swift in Sources */,
+				BC20599821E3C66000521DD9 /* BaseVM.swift in Sources */,
+				BC20599421E3C0FF00521DD9 /* MapVM.swift in Sources */,
+				BC20599621E3C63000521DD9 /* BaseVC.swift in Sources */,
 				BCB8F50121DE4A620071144E /* Cell.swift in Sources */,
 				BCB8F4F821DE492C0071144E /* InitialVC.swift in Sources */,
 				BCB8F4FA21DE493B0071144E /* DetailsVC.swift in Sources */,

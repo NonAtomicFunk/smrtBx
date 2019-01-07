@@ -12,9 +12,9 @@ import RxSwift
 import RxDataSources
 import AlamofireImage
 
-class DetailsVC: UIViewController {
+class DetailsVC: BaseVC {
 
-    var viewModel: DetailsVM!
+//    var viewModel: DetailsVM!
     
     @IBOutlet weak var maineImg: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
@@ -24,21 +24,8 @@ class DetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navSetup()
+//        self.navSetup()
         self.uiSetup()
-    }
-    
-    func navSetup() {
-
-        let btn = UIBarButtonItem(image: UIImage(named: "backIcn"),
-                                  style: .plain,
-                                  target: self,
-                                  action: #selector(self.goBack))
-        btn.tintColor = Constants().reddishOrange
-        
-        self.navigationItem.leftBarButtonItem = btn
-        
-        self.navigationItem.title = "Events"
     }
     
     func uiSetup() {
@@ -53,11 +40,11 @@ class DetailsVC: UIViewController {
         self.showOnMapBtn.backgroundColor = Constants().green
     }
     
-    @objc func goBack() {
-        self.viewModel.goBack()
-    }
+//    @objc func goBack() {
+//        self.viewModel.goBack()
+//    }
     
     @IBAction func showOnMapBtnTapped(_ sender: Any) {
-        
+        (self.viewModel as! DetailsVM).gotoMap()
     }
 }

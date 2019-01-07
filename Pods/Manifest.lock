@@ -3,6 +3,11 @@ PODS:
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
   - Differentiator (3.1.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -16,6 +21,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.8.0)
   - AlamofireImage (~> 3.5.0)
+  - GoogleMaps
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
   - RxSwift (~> 4.0)
@@ -25,6 +31,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Differentiator
+    - GoogleMaps
     - RxAtomic
     - RxCocoa
     - RxDataSources
@@ -34,11 +41,12 @@ SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 375cf024486320f7d5f2ea1faf15c2e09d378de9
+PODFILE CHECKSUM: bc78b8e9b891f5b27fc92c38fee24386237129d4
 
 COCOAPODS: 1.5.3
