@@ -26,28 +26,6 @@ final class VCRouter: NSObject {
         uiWindow.rootViewController = navigationSontroller
     }
     
-//    func pushDetails(_ model: DataModel) {
-//        let detailsVC = storyBoard.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
-//        
-//        let tempModel = model
-//        let vm = DetailsVM(tempModel)
-//        detailsVC.viewModel = vm
-//        
-//        detailsVC.navigationItem.hidesBackButton = true
-//        self.navigationSontroller.pushViewController(detailsVC, animated: true)
-//    }
-//    
-//    func gotoMap(_ model: DataModel) {
-//        let mapVC = storyBoard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
-//        let tempModel = model
-//        
-//        let vm = MapVM(tempModel)
-//        mapVC.viewModel = vm
-//        
-//        mapVC.navigationItem.hidesBackButton = true
-//        self.navigationSontroller.pushViewController(mapVC, animated: true)
-//    }
-    
     func popBack() {
         self.navigationSontroller.popViewController(animated: true)
     }
