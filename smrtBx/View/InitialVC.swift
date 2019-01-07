@@ -49,7 +49,7 @@ class InitialVC: UIViewController {
         self.table.register(UINib(nibName: "Cell",
                                   bundle: nil),
                                   forCellReuseIdentifier: "Cell")
-        self.table.estimatedRowHeight = 98
+        self.table.estimatedRowHeight = 58
         self.navigationItem.title = "World Dev Event"
     }
     

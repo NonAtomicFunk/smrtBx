@@ -66,35 +66,4 @@ struct DataModel: Codable {
         self.latitude = latitude
         self.longitude = longitude
     }
-//    init(from decoder: Decoder) throws {
-    
-        
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        let container = try decoder.codingPath
-        
-        
-//        self.id = try container.decode(String.self, forKey: .id)
-//        self.type = try container.decode(String.self, forKey: .type)
-//        self.title = try container.decode(String.self, forKey: .title)
-//        self.shortDescription = try container.decode(String.self, forKey: .shortDescription)
-//        self.description = try container.decode(String.self, forKey: .description)
-//        self.bigImage = try container.decode(String.self, forKey: .description)
-//        self.smallImage = try container.decode(String.self, forKey: .smallImage)
-//        self.latitude = try container.decode(Double.self, forKey: .latitude)
-//        self.longitude = try container.decode(Double.self, forKey: .longitude)
-//    }
 }
-
-//struct DataModelList: Decodable {
-//
-//    let dmList: [DataModel]
-//
-//
-//    init(from decoder: Decoder) throws {
-//
-//        let contaiter = try decoder.codingPath
-//        self.dmList = try contaiter.
-////        let container = try decoder.container(keyedBy: CodingKeys.self)
-////        self.dmList = try container.decode([IcCellDataModel].self, forKey: .images)
-//    }
-//}

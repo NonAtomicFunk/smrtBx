@@ -20,7 +20,9 @@ final class InitialVM {
     func getAll() {
         Rest.singleTon.getAll { [weak self] (array) in
             let storableArray = array
+            
             self!.allData.value = storableArray
+            self!.sortBy(.events)
         }
     }
     
