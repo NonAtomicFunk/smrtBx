@@ -13,8 +13,6 @@ import RxDataSources
 import AlamofireImage
 
 class DetailsVC: BaseVC {
-
-//    var viewModel: DetailsVM!
     
     @IBOutlet weak var maineImg: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
@@ -24,7 +22,6 @@ class DetailsVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navSetup()
         self.uiSetup()
     }
     
@@ -39,10 +36,6 @@ class DetailsVC: BaseVC {
         
         self.showOnMapBtn.backgroundColor = Constants().green
     }
-    
-//    @objc func goBack() {
-//        self.viewModel.goBack()
-//    }
     
     @IBAction func showOnMapBtnTapped(_ sender: Any) {
         (self.viewModel as! DetailsVM).gotoMap()

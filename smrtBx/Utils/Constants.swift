@@ -24,3 +24,8 @@ enum SmrtBxTypes: String {
     case events = "event"
     case shops = "shop"
 }
+
+enum VCType: String {
+    case map = "MapVC"
+    case details = "DetailsVC"
+}

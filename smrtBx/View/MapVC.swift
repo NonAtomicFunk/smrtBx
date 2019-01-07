@@ -11,31 +11,16 @@ import GoogleMaps
 
 class MapVC: BaseVC {
 
-//    var viewModel: MapVM!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navSetup()
         self.gmapSetup()
     }
-    
-//    func navSetup() {
-//        
-//        let btn = UIBarButtonItem(image: UIImage(named: "backIcn"),
-//                                  style: .plain,
-//                                  target: self,
-//                                  action: #selector(self.goBack))
-//        btn.tintColor = Constants().reddishOrange
-//        self.navigationItem.leftBarButtonItem = btn
-//        self.navigationItem.title = ""
-//    }
     
     func gmapSetup() {
         
         let lat = Double(self.viewModel.dataModel.latitude)!
         let lon = Double(self.viewModel.dataModel.longitude)!
-//        let markerLocation = CLLocation(latitude: lat,
-//                                        longitude: lon)
         
         let camera = GMSCameraPosition.camera(withLatitude: lat,
                                               longitude: lon,

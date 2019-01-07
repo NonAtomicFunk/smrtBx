@@ -20,4 +20,8 @@ class BaseVM: NSObject {
     func goBack() {
         VCRouter.singletone.popBack()
     }
+    
+    func goto(_ vc: VCType, modelToPass: DataModel) {
+        VCRouter.singletone.goto(vc, model: modelToPass)
+    }
 }

@@ -13,18 +13,8 @@ import RxSwift
 class DetailsVM: BaseVM {
     
     let bag = DisposeBag()
-//    var dataModel: DataModel!
-    
-//    init(_ chosenModel: DataModel) {
-//        super.init()
-//        self.dataModel = chosenModel
-//    }
-    
-//    func goBack() {
-//        VCRouter.singletone.popBack()
-//    }
     
     func gotoMap() {
-        VCRouter.singletone.gotoMap(self.dataModel)
+        VCRouter.singletone.goto(.map, model: self.dataModel)
     }
 }

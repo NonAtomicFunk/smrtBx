@@ -10,9 +10,4 @@ import Foundation
 
 class MapVM: BaseVM {
     
-//    init(_ chosenModel: DataModel) {
-//        super.init()
-//        self.dataModel = chosenModel
-//    }
-    
 }

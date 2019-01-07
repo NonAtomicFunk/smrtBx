@@ -33,10 +33,8 @@ final class InitialVM {
     }
     
     func goToDetils(_ modelAtIndx: Int) {
-        print("GO TO : ", modelAtIndx)
         let modelToPass = self.dataModel.value[modelAtIndx]
         
-        print("Chosen model title: ", modelToPass.title)
-        VCRouter.singletone.pushDetails(modelToPass)
+        VCRouter.singletone.goto(.details, model: modelToPass)
     }
 }

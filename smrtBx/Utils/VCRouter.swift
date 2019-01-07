@@ -26,29 +26,50 @@ final class VCRouter: NSObject {
         uiWindow.rootViewController = navigationSontroller
     }
     
-    func pushDetails(_ model: DataModel) {
-        let detailsVC = storyBoard.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
-        
-        let tempModel = model
-        let vm = DetailsVM(tempModel)
-        detailsVC.viewModel = vm
-        
-        detailsVC.navigationItem.hidesBackButton = true
-        self.navigationSontroller.pushViewController(detailsVC, animated: true)
-    }
-    
-    func gotoMap(_ model: DataModel) {
-        let mapVC = storyBoard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
-        let tempModel = model
-        
-        let vm = MapVM(tempModel)
-        mapVC.viewModel = vm
-        
-        mapVC.navigationItem.hidesBackButton = true
-        self.navigationSontroller.pushViewController(mapVC, animated: true)
-    }
+//    func pushDetails(_ model: DataModel) {
+//        let detailsVC = storyBoard.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
+//        
+//        let tempModel = model
+//        let vm = DetailsVM(tempModel)
+//        detailsVC.viewModel = vm
+//        
+//        detailsVC.navigationItem.hidesBackButton = true
+//        self.navigationSontroller.pushViewController(detailsVC, animated: true)
+//    }
+//    
+//    func gotoMap(_ model: DataModel) {
+//        let mapVC = storyBoard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
+//        let tempModel = model
+//        
+//        let vm = MapVM(tempModel)
+//        mapVC.viewModel = vm
+//        
+//        mapVC.navigationItem.hidesBackButton = true
+//        self.navigationSontroller.pushViewController(mapVC, animated: true)
+//    }
     
     func popBack() {
         self.navigationSontroller.popViewController(animated: true)
+    }
+    
+    func goto(_ vc: VCType, model: DataModel) {
+        
+        let tempModel = model
+        
+        var vcToGo: BaseVC!
+        var vm: BaseVM!
+        
+        switch vc {
+        case .details:
+            vcToGo = storyBoard.instantiateViewController(withIdentifier: vc.rawValue) as! DetailsVC
+            vm = DetailsVM(tempModel)
+        case .map:
+            vcToGo = storyBoard.instantiateViewController(withIdentifier: vc.rawValue) as! MapVC
+            vm = MapVM(tempModel)
+        }
+        
+        vcToGo.viewModel = vm
+        vcToGo.navigationItem.hidesBackButton = true
+        self.navigationSontroller.pushViewController(vcToGo, animated: true)
     }
 }
